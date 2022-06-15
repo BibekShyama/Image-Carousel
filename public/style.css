@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+.carousel {
+  /* border: 2px red solid; */
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: 2rem auto;
+  overflow: hidden;
+  width: 640px;
+}
+
+.carousel__images {
+  display: flex;
+}
+
+.carousel__images img {
+  border-radius: 10px;
+}
+
+.carousel__button {
+  background-color: teal;
+  border: 0;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.25;
+  position: absolute;
+  z-index: 1;
+  /* transform: opacity 0.5; */
+}
+
+.previous {
+  /* border: 2px cyan solid; */
+  left: 5px;
+}
+
+.next {
+  /* border: 2px green solid; */
+  right: 5px;
+}
+.previous:hover,
+.next:hover {
+  transform: scale(1.1);
+  background-color: aqua;
+}
